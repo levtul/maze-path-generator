@@ -1,0 +1,17 @@
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/json/Edge.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/controller/ExitController.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/json/Maze.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/graph/MatrixElement.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/json/GenerationResults.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/generator/SimpleGenerator.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/settings/GenerationSettings.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/controller/SceneSwitcher.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/controller/SceneVariant.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/settings/Settings.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/controller/UploadController.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/controller/MainMenuController.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/generator/PathGenerator.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/module-info.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/controller/GeneratorController.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/model/graph/Graph.java
+/Users/lev/IdeaProjects/maze-path-generator/src/main/java/ru/hse/levtulyavko/mazepathgenerator/App.java

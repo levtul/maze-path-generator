@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="30.0" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.hse.levtulyavko.mazepathgenerator.controller.GeneratorController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="666.7803192138672" minWidth="10.0" prefWidth="666.7803192138672" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <GridPane maxWidth="-Infinity" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.halignment="LEFT" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <children>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity">
+                    <Label layoutX="15.0" layoutY="7.0" text="Оператор симметрии">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                    <Slider fx:id="symmetrySlider" blockIncrement="0.2" layoutX="14.0" layoutY="28.0" majorTickUnit="0.2" max="1.0" prefHeight="16.0" prefWidth="143.0" value="1.0" />
+                    <TextField fx:id="symmetryValue" alignment="CENTER_RIGHT" layoutX="161.0" layoutY="25.0" minHeight="-Infinity" prefHeight="21.0" prefWidth="45.0" text="1" />
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity">
+                    <children>
+                        <Label layoutX="15.0" layoutY="7.0" text="Оператор сжатия">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Slider fx:id="compressionSlider" blockIncrement="0.2" layoutX="14.0" layoutY="28.0" max="1.0" prefHeight="16.0" prefWidth="143.0" value="1.0" />
+                        <TextField fx:id="compressionValue" alignment="CENTER_RIGHT" layoutX="161.0" layoutY="25.0" minHeight="-Infinity" prefHeight="21.0" prefWidth="45.0" text="1" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity">
+                    <children>
+                        <Label layoutX="15.0" layoutY="7.0" text="Оператор кольца">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Slider fx:id="ringSlider" blockIncrement="0.2" layoutX="14.0" layoutY="28.0" max="1.0" prefHeight="16.0" prefWidth="143.0" value="1.0" />
+                        <TextField fx:id="ringValue" alignment="CENTER_RIGHT" layoutX="161.0" layoutY="25.0" minHeight="-Infinity" prefHeight="21.0" prefWidth="45.0" text="1" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity">
+                    <children>
+                        <Label layoutX="15.0" layoutY="7.0" text="Оператор инверсии">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Slider fx:id="inversionSlider" blockIncrement="0.2" layoutX="14.0" layoutY="28.0" max="1.0" prefHeight="16.0" prefWidth="143.0" value="1.0" />
+                        <TextField fx:id="inversionValue" alignment="CENTER_RIGHT" layoutX="161.0" layoutY="25.0" minHeight="-Infinity" prefHeight="21.0" prefWidth="45.0" text="1" />
+                    </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets left="15.0" />
+            </padding>
+        </VBox>
+    </GridPane>
+    <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+         <Pane maxHeight="-Infinity" maxWidth="-Infinity"
+               GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <children>
+                <Pane fx:id="pane"/>
+                  <GridPane fx:id="graphTable" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity">
+                  </GridPane>
+            </children>
+         </Pane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+                <children>
+                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="7.0">
+                        <children>
+                            <Label text="Количество итераций:">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                        <padding>
+                           <Insets bottom="3.0" />
+                        </padding></Label>
+                            <TextField fx:id="iterationsValue" alignment="CENTER_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="21.0" prefWidth="44.0" text="1">
+                                <HBox.margin>
+                                    <Insets right="10.0" />
+                                </HBox.margin>
+                            </TextField>
+                            <ImageView fx:id="playButton" fitHeight="35.0" fitWidth="33.0">
+                                <image>
+                                    <Image url="@icons/play.png" />
+                                </image>
+                                <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                </HBox.margin>
+                            </ImageView>
+                            <Label text="Скорость:">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets bottom="3.0" />
+                        </HBox.margin></Label>
+                            <Slider fx:id="speedSlider" blockIncrement="0.5" majorTickUnit="0.5" max="3.0" min="0.5" minorTickCount="0" prefHeight="16.0" prefWidth="88.0" showTickMarks="true" snapToTicks="true" value="1.0">
+                        <HBox.margin>
+                           <Insets top="10.0" />
+                        </HBox.margin></Slider>
+                            <Label fx:id="speedValue" prefWidth="30.0" text="1x" />
+                        </children>
+                        <padding>
+                            <Insets bottom="10.0" top="10.0" />
+                        </padding>
+                    </HBox>
+                </children>
+                <opaqueInsets>
+                    <Insets top="10.0" />
+                </opaqueInsets>
+            </AnchorPane>
+        </children>
+    </GridPane>
+</GridPane>

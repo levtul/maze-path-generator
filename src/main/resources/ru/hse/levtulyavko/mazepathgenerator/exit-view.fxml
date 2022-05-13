@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="900.0" spacing="5.0"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.hse.levtulyavko.mazepathgenerator.controller.ExitController">
+   <children>
+      <Label text="Визуализация завершена!">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+      <Button mnemonicParsing="false" text="Экспортировать результаты"
+              onAction="#exportResults">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="202.0" text="Повторить"
+            onAction="#replay">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="203.0" text="Изменить настройки"
+            onAction="#changeSettings">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" text="Выйти в главное меню"
+        onAction="#toMainMenu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
